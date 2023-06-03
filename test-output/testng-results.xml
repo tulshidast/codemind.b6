@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21320" started-at="2023-06-02T03:08:01Z" finished-at="2023-06-02T03:08:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21320" started-at="2023-06-02T03:08:01Z" finished-at="2023-06-02T03:08:22Z">
+      <class name="com.omayo.testcases.VerifyUserRegistration">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.omayo.testcases.VerifyUserRegistration@bf9759]" name="setUp" is-config="true" duration-ms="13250" started-at="2023-06-02T08:38:01Z" finished-at="2023-06-02T08:38:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserRegistration()[pri:0, instance:com.omayo.testcases.VerifyUserRegistration@bf9759]" name="verifyUserRegistration" duration-ms="6915" started-at="2023-06-02T08:38:14Z" finished-at="2023-06-02T08:38:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserRegistration -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.omayo.testcases.VerifyUserRegistration@bf9759]" name="tearDown" is-config="true" duration-ms="1094" started-at="2023-06-02T08:38:21Z" finished-at="2023-06-02T08:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.omayo.testcases.VerifyUserRegistration -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
