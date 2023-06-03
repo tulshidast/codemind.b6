@@ -5,6 +5,7 @@ import static org.testng.Assert.assertEquals;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -29,7 +30,7 @@ public class VerifyHomePage {
 	}
 
 	@Test
-	public void verifyUserAbleToSelectOptionsFromDropdown() {
+	public void verifyUserAbleToSelectOptionsFromDropdown() throws IOException {
 		// hard aasertion
 		/*
 		 * assertEquals(omayoHomePage.getHomePageTitle(), "omayo (QAFox.com)");
@@ -65,7 +66,10 @@ public class VerifyHomePage {
 	}
 
 	@AfterMethod
-	public void tearDown() {
+	public void tearDown(ITestResult result) throws IOException {
+		if (result.getStatus() == ITestResult.FAILURE) {
+			Utility.takesScreenshot(driver, result.getName());
+		}
 		driver.quit();
 	}
 }
