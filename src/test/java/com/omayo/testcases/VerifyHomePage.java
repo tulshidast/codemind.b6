@@ -67,6 +67,7 @@ public class VerifyHomePage {
 
 	@AfterMethod
 	public void tearDown(ITestResult result) throws IOException {
+		// this will take screenshot on failure
 		if (result.getStatus() == ITestResult.FAILURE) {
 			Utility.takesScreenshot(driver, result.getName());
 		}
